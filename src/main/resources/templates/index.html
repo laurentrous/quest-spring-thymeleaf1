@@ -7,7 +7,7 @@
 </head>
 <body>
 <header th:replace="header :: top">Header TODO</header>
-<form method="get" action="doctor">
+<form method="get" th:action="@{/doctor}">
     <fieldset>
         <label for="name">Your doctor's name: </label>
         <input id="name" name="name" type="text" placeholder="John Doe">
