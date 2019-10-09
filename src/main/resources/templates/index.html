@@ -6,12 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header th:fragment="top">
-    <nav>
-        <span>Doctor Secret Service</span>
-        <a href="/">Sign In</a>
-    </nav>
-</header>
+<header th:replace="header :: top">Header TODO</header>
 <form method="get" action="doctor">
     <fieldset>
         <label for="name">Your doctor's name: </label>
@@ -23,13 +18,6 @@
         <input type="submit" value="Sign In">
     </fieldset>
 </form>
-<footer th:fragment="bottom">
-    <ul>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">TARDIS</a></li>
-    </ul>
-    <span>Copyright BBC/Terry Nation 1963</span>
-</footer>
+<footer th:replace="footer :: bottom">Footer TODO</footer>
 </body>
 </html>
